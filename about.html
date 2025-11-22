@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Hearth & Harvest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons8-5-star-hotel-50.png">
+    <style>
+        /* Specific CSS for the About Page Layout */
+        
+        .about-container {
+            padding: 50px 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            margin-bottom: 50px;
+        }
+        
+        .about-section h2 {
+            font-size: 2.5em;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .story-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        blockquote {
+            font-style: italic;
+            border-left: 5px solid var(--color-secondary);
+            padding-left: 20px;
+            margin: 30px 0;
+            color: #555;
+        }
+        /* Team Bios */
+        
+        .team-bios {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .bio-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            padding: 20px;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .bio-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--color-primary);
+        }
+        
+        .bio-card h3 {
+            font-size: 1.5em;
+            color: var(--color-secondary);
+        }
+        
+        .bio-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        /* Sourcing
+    Section */
+        
+        .sourcing-commitment {
+            background-color: #F4F4F4;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        .sourcing-commitment ul {
+            list-style: none;
+            text-align: left;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+        
+        .sourcing-commitment ul li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #CCC;
+        }
+        
+        .sourcing-commitment ul li strong {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">The Hearth & Harvest</div>
+        <nav>
+            <ul>
+                <li><a href="new.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <a href="reservations.html" class="cta-nav-btn">Book Now</a>
+    </header>
+
+    <div class="about-container">
+
+        <section class="about-section">
+            <h2>The Heart of The Hearth & Harvest</h2>
+
+            <p class="story-text">The Hearth & Harvest was founded on a simple principle: that the finest food begins with the finest ingredients, honored by careful preparation. We are more than just a restaurant; we are a celebration of our local bounty and the time-honored
+                techniques that bring ingredients to life. Opened in 2020 by Chef Elias Vance and Sommelier Clara Mendes, our mission has always been to create a dining space that feels both refined and utterly welcoming—a true extension of the home kitchen.</p>
+
+            <blockquote>
+                "Our kitchen is built on respect—for the ingredient, for the process, and for the guest. Every dish tells a story of the land and the hands that worked it." — **Chef Elias Vance**
+            </blockquote>
+        </section>
+
+        <section class="about-section">
+            <h2>Meet the Team</h2>
+            <div class="team-bios">
+
+                <div class="bio-card">
+                    <img src="chef.jpeg" alt="Photo of Chef Elias Vance">
+                    <h3>Elias Vance, Executive Chef</h3>
+                    <p>Focus: Rustic elegance and seasonal sourcing.</p>
+                    <p>Chef Vance honed his skills in Michelin-starred kitchens across Europe before returning home to focus on hyper-local cuisine. His passion is the perfect marriage of smoke, heat, and seasonal textures.</p>
+                </div>
+
+                <div class="bio-card">
+                    <img src="chef2.jpeg" alt="Photo of Sommelier Clara Mendes">
+                    <h3>Clara Mendes, Sommelier & GM</h3>
+                    <p>Focus: Curated wine list and guest experience.</p>
+                    <p>Clara manages our cellar, specializing in sustainable wines that perfectly complement the menu, and is dedicated to providing an atmosphere of warmth and flawless service.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section sourcing-commitment">
+            <h2>🌿 Our Commitment to Sourcing</h2>
+            <p>We believe great flavor is non-negotiable, and neither is responsibility. We maintain direct, daily relationships with local partners.</p>
+            <ul>
+                <li><strong>Local Partnerships:</strong> Direct relationships with farmers, ranchers, and fishmongers within a 50-mile radius.</li>
+                <li><strong>Sustainable Practices:</strong> Committed to minimizing waste, composting, and using energy-efficient appliances.</li>
+                <li><strong>Seasonal Focus:</strong> Our menu evolves with the seasons—if it's not currently growing locally, it won't be on your plate.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="new.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-details">
+            <p>&copy; 2025 The Hearth & Harvest. All Rights Reserved.</p>
+            <p>450 Oak Street | (555) 123-4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

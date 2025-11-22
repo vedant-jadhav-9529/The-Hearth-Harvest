@@ -1,0 +1,265 @@
+/* --- Global Styles & Reset --- */
+
+:root {
+    --color-primary: #800020;
+    /* Rich Burgundy/Wine Red for CTAs */
+    --color-secondary: #2C3E50;
+    /* Deep Charcoal Gray */
+    --color-background: #F8F8F8;
+    /* Cream/Off-White */
+    --color-text: #222222;
+    --color-light-text: #FFFFFF;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+}
+
+
+/* --- Header & Navigation --- */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-light-text);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-primary);
+}
+
+.cta-nav-btn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+/* --- Hero Section --- */
+
+.hero-section {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: var(--color-light-text);
+    text-align: left;
+    overflow: hidden;
+}
+
+.hero-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images2.jpeg') center/cover no-repeat;
+    /* Replace with your actual hero image */
+    background-color: #333;
+    /* Dark fallback color */
+    z-index: -1;
+    filter: brightness(0.7);
+    /* Darken the image for text readability */
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: var(--color-light-text);
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-ctas a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cta-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    border: 2px solid var(--color-primary);
+}
+
+.cta-primary:hover {
+    background-color: #a00030;
+    border-color: #a00030;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: var(--color-light-text);
+    border: 2px solid var(--color-light-text);
+}
+
+.cta-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* --- Highlights Section --- */
+
+.highlights-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.highlights-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.highlight-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px;
+    background-color: var(--color-light-text);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+
+/* --- Reservation/Contact Section --- */
+
+.reservation-contact-section {
+    display: flex;
+    gap: 5%;
+    padding: 80px 5%;
+    background-color: #EEEEEE;
+    /* Subtle contrast */
+}
+
+.contact-info {
+    flex: 2;
+    max-width: 600px;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.map-placeholder {
+    flex: 1;
+    min-height: 300px;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+/* --- Footer --- */
+
+.main-footer {
+    background-color: var(--color-secondary);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.footer-links a {
+    color: var(--color-background);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9em;
+}
+
+.footer-details {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+.footer-details p {
+    margin: 5px 0;
+}

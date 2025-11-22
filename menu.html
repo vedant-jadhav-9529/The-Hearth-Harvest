@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Hearth & Harvest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons8-5-star-hotel-50.png">
+    <style>
+        .menu-container {
+            padding: 50px 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .menu-category {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #DDDDDD;
+            padding-bottom: 30px;
+        }
+        
+        .menu-category h2 {
+            font-size: 2.2em;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+            border-left: 5px solid var(--color-primary);
+            padding-left: 15px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #AAAAAA;
+        }
+        
+        .item-details {
+            flex-grow: 1;
+            padding-right: 20px;
+        }
+        
+        .item-details h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            color: var(--color-secondary);
+        }
+        
+        .item-description {
+            font-size: 0.95em;
+            color: #666;
+        }
+        
+        .item-price {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: var(--color-primary);
+            white-space: nowrap;
+        }
+        
+        .dietary-notes {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+            padding: 15px;
+            background-color: #F0F0F0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">The Hearth & Harvest</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <a href="reservations.html" class="cta-nav-btn">Book Now</a>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1 class="section-title">Our Offerings</h1>
+            <p class="section-subtitle">A culinary journey built on respect for locally-sourced, seasonal ingredients.</p>
+        </div>
+
+        <section class="menu-category">
+            <h2>🥗 Starters & Appetizers</h2>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Masala Papad</h3>
+                    <p class="item-description">Masala Papad is a popular Indian appetizer or snack found on menus of countless restaurants and street food stalls across India.</p>
+                </div>
+                <div class="item-price">₹150</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Paneer pakodaa</h3>
+                    <p class="item-description">Paneer pakora is a popular Indian snack in which soft paneer (Indian cottage cheese) pieces are deep-fried after being coated in a spiced gram flour batter.</p>
+                </div>
+                <div class="item-price">₹150</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Pani Puri</h3>
+                    <p class="item-description">Pani puri is the most popular Indian street food and is loved by everyone whether kids or adults. </p>
+                </div>
+                <div class="item-price">₹150</div>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>🍝 Main Courses</h2>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Paneer Masala</h3>
+                    <p class="item-description">Paneer masala is a popular Indian dish that includes paneer (cheese) and a spiced gravy.</p>
+                </div>
+                <div class="item-price">₹500</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>jeera rice</h3>
+                    <p class="item-description">The Jeera Rice recipe begins with essential ingredients: basmati rice, cumin seeds, ghee (or oil), and optional spices like bay leaves and black peppercorns. Basmati rice can be washed well to remove excess starch and soaked for about
+                        20-30 minutes to begin the preparation.</p>
+                </div>
+                <div class="item-price">₹300</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>dal tadka</h3>
+                    <p class="item-description">Dal Tadka is a North Indian dish made using split lentils (masoor dal), a variety of spices, and herbs.</p>
+                </div>
+                <div class="item-price">₹400</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Paneer butter masala</h3>
+                    <p class="item-description">Paneer Butter Masala – Low Cal! When forced to eat vegetarian food while dining out, Paneer butter masala is my saviour. I relish the buttery flavour and .</p>
+                </div>
+                <div class="item-price">₹550</div>
+            </div>
+        </section>
+
+        <div class="dietary-notes">
+            **Dietary Key:** **V:** Vegetarian, **GF:** Gluten-Free, **DF:** Dairy-Free. Please inform your server of any severe allergies.
+        </div>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-details">
+            <p>&copy; 2025 The Hearth & Harvest. All Rights Reserved.</p>
+            <p>450 Oak Street | (555) 123-4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
